@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class madlibs {
+	public static void main(String[]args) {
+	
+		Scanner scanner = new Scanner(System.in);
+		
+		String pronoun;
+		String adjective1;
+		String verb1;
+		String noun1;
+		String adjectives2;
+		
+		System.out.print("Enter an pronoun (A person): ");
+		pronoun = scanner.nextLine();
+		System.out.print("Enter an adjective (Description): ");
+		adjective1 = scanner.nextLine();
+		System.out.print("Enter an verb (Action): ");
+		verb1 = scanner.nextLine();
+		System.out.print("Enter an noun (object or person): ");
+		noun1 = scanner.nextLine();
+		System.out.print("Enter an adjective (Description): ");
+		adjectives2 = scanner.nextLine();
+		
+		System.out.println("\nYesterday I went to " + pronoun +"'s house for a party.");
+		System.out.println("In the house, I saw a " + adjective1 + ".");
+		System.out.println("I was shocked that it was on the "+ noun1+" and it was also" +verb1+".");
+		System.out.println("Then again this house was actually a "+ adjectives2+".");
+		
+		scanner.close();
+
+	}
+}
